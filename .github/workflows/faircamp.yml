@@ -19,13 +19,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Configure git
-        run: |
-          git config --add lfs.url "https://48fb491f3dc91bd076ae5af1a9d6b401:a6e78f7ef0bc5c7b914fc5f976eb0b68e67ceb35e2856b0a83a0d864152d0b18@git-lfs-s3-proxy.pages.dev/bb7602930482a97a4a403a52a17cb524.r2.cloudflarestorage.com/empilements-data-lfs"
+
       - name: Checkout code
         uses: actions/checkout@v4
-        with:
-            lfs: true
+      - name: Git config
+        run: |
+          git config --add lfs.url "https://48fb491f3dc91bd076ae5af1a9d6b401:a6e78f7ef0bc5c7b914fc5f976eb0b68e67ceb35e2856b0a83a0d864152d0b18@git-lfs-s3-proxy.pages.dev/bb7602930482a97a4a403a52a17cb524.r2.cloudflarestorage.com/empilements-data-lfs"
+      - name: Git LFS install
+        run: git lfs install
+      - name: Git LFS fetch
+        run: git lfs fetch --all
       - name: Run the build process with Docker
         uses: addnab/docker-run-action@v3
         with:
