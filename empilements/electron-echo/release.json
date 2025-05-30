@@ -1,0 +1,86 @@
+{
+  "title": "Electron Echo",
+  "catalog": "empilements",
+  "date": "2025-05-07",
+  "tracks": [
+    {
+      "title": "02-The_Artificial_Arm-You_Are_Listening_To_An_Elecronic_Jam",
+      "audio_file": "1-02-The_Artificial_Arm-You_Are_Listening_To_An_Elecronic_Jam.mp3",
+      "description": "http://empilements.incongru.org?c=electron-echo"
+    },
+    {
+      "title": "03-Audio_Riot-Keystroke",
+      "audio_file": "2-03-Audio_Riot-Keystroke.mp3",
+      "description": "http://empilements.incongru.org?c=electron-echo"
+    },
+    {
+      "title": "04-AS1-Hydroglide",
+      "audio_file": "3-04-AS1-Hydroglide.mp3",
+      "description": "http://empilements.incongru.org?c=electron-echo"
+    },
+    {
+      "title": "05-=UHU=Universal_Human_Uderground-Skaitlojamas_Mashinas_Muzika",
+      "audio_file": "4-05-=UHU=Universal_Human_Uderground-Skaitlojamas_Mashinas_Muzika.mp3",
+      "description": "http://empilements.incongru.org?c=electron-echo"
+    },
+    {
+      "title": "06-Poladroid-Deux",
+      "audio_file": "5-06-Poladroid-Deux.mp3",
+      "description": "http://empilements.incongru.org?c=electron-echo"
+    },
+    {
+      "title": "07-Shifted_Phases-Implosive_Regions",
+      "audio_file": "6-07-Shifted_Phases-Implosive_Regions.mp3",
+      "description": "http://empilements.incongru.org?c=electron-echo"
+    },
+    {
+      "title": "08-Kobol_Electronics-Intellicon",
+      "audio_file": "7-08-Kobol_Electronics-Intellicon.mp3",
+      "description": "http://empilements.incongru.org?c=electron-echo"
+    },
+    {
+      "title": "09-Mr_Velcro_Fastener-Coywm",
+      "audio_file": "8-09-Mr_Velcro_Fastener-Coywm.mp3",
+      "description": "http://empilements.incongru.org?c=electron-echo"
+    },
+    {
+      "title": "10-The_Consumer-Information",
+      "audio_file": "9-10-The_Consumer-Information.mp3",
+      "description": "http://empilements.incongru.org?c=electron-echo"
+    },
+    {
+      "title": "11-Faceless_Mind-Faceless_Programmer",
+      "audio_file": "10-11-Faceless_Mind-Faceless_Programmer.mp3",
+      "description": "http://empilements.incongru.org?c=electron-echo"
+    },
+    {
+      "title": "12-Luke_Eargoggle-This_town_stinks",
+      "audio_file": "11-12-Luke_Eargoggle-This_town_stinks.mp3",
+      "description": "http://empilements.incongru.org?c=electron-echo"
+    },
+    {
+      "title": "13-Pametex-Glas",
+      "audio_file": "12-13-Pametex-Glas.mp3",
+      "description": "http://empilements.incongru.org?c=electron-echo"
+    },
+    {
+      "title": "<<<<<<<<<<<<<<<<<<<<<<<<<<",
+      "audio_file": "13-<<<<<<<<<<<<<<<<<<<<<<<<<<.mp3",
+      "description": "http://empilements.incongru.org?c=electron-echo"
+    }
+  ],
+  "synopsis": "",
+  "more": "",
+  "release_artist": "",
+  "track_artist": "",
+  "unlisted": false,
+  "copy_link": "enabled",
+  "embedding": "disabled",
+  "speed_controls": "enabled",
+  "m3u": "disabled",
+  "track_numbering": "arabic-dotted",
+  "cover": {
+    "description": "Cover image",
+    "file": "cover.gif"
+  }
+}
