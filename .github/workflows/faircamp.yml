@@ -22,6 +22,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: LFS fetch
+        run: |
+          git lfs fetch --all && git lfs checkout
+
       - name: Restore .faircamp_cache
         id: cache-faircamp-restore
         uses: actions/cache/restore@v4
