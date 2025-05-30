@@ -50,12 +50,12 @@ jobs:
             .faircamp_cache
           key: ${{ steps.cache-faircamp-restore.outputs.cache-primary-key }}
 
-      - name: R2 Backup
-        uses: JoseMoranUrena523/r2-backup@v1.0.0
-        env:
-          ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
-          BUCKET_NAME: ${{ secrets.R2_BUCKET }}
-          SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
-          ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+      - name: Deploy to R2
+        uses: ryand56/r2-upload-action@latest
         with:
-          args: --overwrite --remove
+          r2-account-id: ${{ secrets.R2_ACCOUNT_ID }}
+          r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID }}
+          r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          r2-bucket: ${{ secrets.R2_BUCKET }}
+          source-dir: .faircamp_build
+          destination-dir: ./
