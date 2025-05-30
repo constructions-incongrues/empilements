@@ -24,7 +24,7 @@ jobs:
 
       - name: LFS fetch
         run: |
-          git lfs fetch --all && git lfs checkout
+          git lfs fetch --recent && git lfs checkout
 
       - name: Restore .faircamp_cache
         id: cache-faircamp-restore
@@ -40,7 +40,7 @@ jobs:
             image: n3wjack/faircamp:latest
             options: -v ${{ github.workspace }}:/data
             run: |
-                faircamp
+                faircamp --ignore-errors
 
       - name: Save .faircamp_cache
         id: cache-faircamp-save
