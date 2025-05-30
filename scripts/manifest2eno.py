@@ -2,6 +2,10 @@ import json
 import sys
 from pathlib import Path
 
+def normalize_artist(name):
+    # Normalise les espaces et la casse (titre)
+    return " ".join(name.strip().split()).title()
+
 def json_to_eno(manifest):
     lines = []
     lines.append(f'title: {manifest.get("title", "")}')
@@ -10,7 +14,7 @@ def json_to_eno(manifest):
     if authors:
         lines.append("release_artists:")
         for author in authors:
-            lines.append(f'  - {author}')
+            lines.append(f'  - {normalize_artist(author)}')
     return "\n".join(lines)
 
 def process_manifest(manifest_path):
