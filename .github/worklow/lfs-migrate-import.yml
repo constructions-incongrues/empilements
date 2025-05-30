@@ -1,0 +1,32 @@
+name: Git LFS Migrate Import
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  lfs-migrate:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Git LFS
+        run: git lfs install
+
+      - name: Run git lfs migrate import
+        run: git lfs migrate import --everything --include="*.mp3" --yes
+
+      - name: Push changes
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git push origin main --force
