@@ -2,7 +2,7 @@ title: Empilements
 
 release_download_access: disabled
 
-base_url: https://empilements.pantagruweb.club
+base_url: https://empilements.incongru.org
 
 feature_support_artists
 show_support_artists
@@ -28,5 +28,4 @@ Le code source est [diffusé](https://github.com/constructions-incongrues/empile
 
 more_label: À propos
 
-track_downloads:
-    - mp3
+track_downloads: mp3
