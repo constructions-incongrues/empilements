@@ -1,4 +1,4 @@
-name: Faircamp
+name: Faircamp Build
 
 on:
   push:
@@ -19,17 +19,29 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-
       - name: Checkout code
         uses: actions/checkout@v4
+
+      - name: Restore .faircamp_cache
+        id: cache-faircamp-restore
+        uses: actions/cache/restore@v4
         with:
-          fetch-depth: 0
-      - name: Checkout LFS
-        run: git lfs fetch --all && git lfs checkout
-      - name: Run the build process with Docker
+          path: |
+            .faircamp_cache
+          key: ${{ runner.os }}-faircamp-cache
+
+      - name: Faircamp Build
         uses: addnab/docker-run-action@v3
         with:
             image: n3wjack/faircamp:latest
             options: -v ${{ github.workspace }}:/data
             run: |
                 faircamp
+
+      - name: Save .faircamp_cache
+        id: cache-faircamp-save
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            .faircamp_cache
+          key: ${{ steps.cache-faircamp-restore.outputs.cache-primary-key }}
