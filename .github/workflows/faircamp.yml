@@ -23,8 +23,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Fetch all history for all branches and tags
-          lfs: true  # Fetch LFS files
+          fetch-depth: 0
+      - name: Checkout LFS
+        run: git lfs fetch --all && git lfs checkout
       - name: Run the build process with Docker
         uses: addnab/docker-run-action@v3
         with:
