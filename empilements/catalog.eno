@@ -1,10 +1,9 @@
-title: Empilements
+> https://simonrepp.com/faircamp/manual/catalog-catalog-eno.html
 
-release_download_access: disabled
+title: Empilements
 
 base_url: https://empilements.incongru.org
 
-feature_support_artists
 show_support_artists
 
 feeds: all
@@ -28,6 +27,10 @@ Le code source est [diffusé](https://github.com/constructions-incongrues/empile
 
 more_label: À propos
 
-> track_downloads: mp3
+track_download_access: disabled
+track_downloads: mp3
+
+release_download_access: disabled
+release_downloads: mp3
 
 label_mode

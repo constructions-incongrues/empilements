@@ -1,0 +1,34 @@
+title: Empilements
+
+base_url: https://empilements.incongru.org
+
+show_support_artists
+
+feeds: all
+
+language: fr
+
+opengraph: enabled
+
+theme:
+    base = dark
+
+--- synopsis
+La situation empile de jour en jour.
+--- synopsis
+
+--- more
+Ce projet est développé par [Constructions Incongrues](https://www.constructions-Incongrues.net) et est hébergé par [Pastis Hosting](https://www.pastis-hosting.net).
+
+Le code source est [diffusé](https://github.com/constructions-incongrues/empilements) sous license [AGPLv3](http://www.gnu.org/licenses/agpl-3.0.html).
+--- more
+
+more_label: À propos
+
+track_download_access: disabled
+track_downloads: mp3
+
+> release_download_access: disabled
+> release_downloads: mp3
+
+label_mode
